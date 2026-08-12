@@ -1,0 +1,362 @@
+@font-face {
+  font-family: Inter;
+  src: url('/fonts/inter.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: #fbfaf7;
+  color: #252721;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 14px;
+}
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 5px;
+}
+.studio {
+  padding: 0 52px;
+  max-width: 1180px;
+  margin: auto;
+}
+.studio-nav {
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e2db;
+}
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 26px;
+  font-weight: 570;
+  letter-spacing: -1.2px;
+}
+.tiny-sun {
+  color: #2d5eeb;
+  font-size: 33px;
+}
+.studio-nav nav {
+  display: flex;
+  gap: 27px;
+  font-size: 11px;
+}
+.studio-nav nav a {
+  transition: color 0.15s;
+}
+.studio-nav nav a:hover {
+  color: #2563eb;
+}
+.studio-nav nav span {
+  margin-left: 9px;
+}
+.hero {
+  padding: 66px 0 57px;
+  display: grid;
+  grid-template-columns: 1fr 230px;
+  align-items: center;
+  gap: 25px;
+}
+.eyebrow {
+  font-size: 9px;
+  letter-spacing: 0.035em;
+  color: #77796f;
+}
+.hero .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.blue-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+h1 {
+  font-size: 53px;
+  font-weight: 450;
+  line-height: 1.09;
+  letter-spacing: -2.8px;
+  margin: 21px 0 20px;
+}
+.description {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #77796f;
+  margin-bottom: 25px;
+}
+.primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 27px;
+  background: #2e58d5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 10px;
+  transition:
+    background 0.18s,
+    transform 0.18s;
+}
+.primary-link:hover {
+  background: #2145b4;
+  transform: translateY(-2px);
+}
+.flower {
+  color: #3a60ce;
+  position: relative;
+}
+.flower svg {
+  display: block;
+  width: 100%;
+  transform: rotate(-12deg);
+  transition: transform 0.6s ease;
+}
+.flower:hover svg {
+  transform: rotate(4deg);
+}
+.flower > span {
+  display: block;
+  color: #828476;
+  text-align: center;
+  font-size: 9px;
+  letter-spacing: 0.015em;
+  margin-top: 10px;
+}
+.section-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  color: #77796f;
+  border-top: 1px solid #e4e2db;
+  padding: 19px 0 22px;
+}
+.section-label span:first-child {
+  color: #343831;
+}
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.note {
+  text-align: left;
+  border: 0;
+  background: none;
+  padding: 0;
+}
+.note h2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  margin: 12px 0 8px;
+}
+.note h2 span {
+  color: #7d8174;
+}
+.note-detail {
+  font-size: 9px;
+  color: #83867a;
+  line-height: 1.7;
+  margin-top: 0;
+  min-height: 32px;
+}
+.drawing {
+  height: 136px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.25s;
+}
+.note:hover .drawing {
+  transform: translateY(-3px);
+}
+.drawing i {
+  display: block;
+  position: absolute;
+  border: 1px solid currentColor;
+}
+.arches {
+  background: #e9eddf;
+  color: #8b9973;
+}
+.arches i {
+  width: 70px;
+  height: 100px;
+  border-radius: 70px 70px 0 0;
+  bottom: -8px;
+}
+.arches i:nth-child(2) {
+  width: 90px;
+  height: 110px;
+}
+.arches i:nth-child(3) {
+  width: 110px;
+  height: 120px;
+}
+.arches i:nth-child(4) {
+  width: 130px;
+  height: 130px;
+}
+.arches i:nth-child(5) {
+  width: 150px;
+  height: 140px;
+}
+.grid {
+  background: #ede8df;
+  color: #b2a08d;
+}
+.grid i {
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg);
+}
+.grid i:nth-child(2) {
+  transform: translateX(25px) rotate(45deg);
+}
+.grid i:nth-child(3) {
+  transform: translateX(-25px) rotate(45deg);
+}
+.grid i:nth-child(4) {
+  transform: translateY(25px) rotate(45deg);
+}
+.grid i:nth-child(5) {
+  transform: translateY(-25px) rotate(45deg);
+}
+.orbit {
+  background: #e4e9ef;
+  color: #8a9cb9;
+}
+.orbit i {
+  width: 125px;
+  height: 45px;
+  border-radius: 50%;
+  transform: rotate(-30deg);
+}
+.orbit i:nth-child(2) {
+  transform: rotate(6deg);
+}
+.orbit i:nth-child(3) {
+  transform: rotate(42deg);
+}
+.orbit i:nth-child(4) {
+  transform: rotate(78deg);
+}
+.orbit i:nth-child(5) {
+  transform: rotate(114deg);
+}
+footer {
+  border-top: 1px solid #e4e2db;
+  margin-top: 35px;
+  padding: 22px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 9px;
+  color: #7c8071;
+}
+footer button {
+  border: 0;
+  background: none;
+  font-size: 9px;
+  margin-left: auto;
+}
+.footer-star {
+  color: #3263dd;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .studio {
+    padding: 0 24px;
+  }
+  .studio-nav {
+    height: 68px;
+  }
+  .studio-nav nav {
+    gap: 16px;
+    font-size: 9px;
+  }
+  .wordmark {
+    font-size: 22px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 38px 0;
+    gap: 10px;
+  }
+  h1 {
+    font-size: 47px;
+  }
+  .flower {
+    width: 160px;
+    justify-self: center;
+  }
+  .hero-copy .description {
+    font-size: 12px;
+  }
+  .desktop-break {
+    display: none;
+  }
+  .note-grid {
+    grid-template-columns: 1fr;
+  }
+  .drawing {
+    height: 155px;
+  }
+  .note h2 {
+    font-size: 15px;
+  }
+  .note .eyebrow,
+  .note-detail {
+    font-size: 11px;
+  }
+  .section-label {
+    gap: 12px;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  .footer-star {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
