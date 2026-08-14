@@ -64,7 +64,7 @@ export function Studio() {
           <p className="eyebrow">
             <span className="blue-dot" /> An independent little studio
           </p>
-          <h1 style={{"width": "358px", "height": "115px"}}>
+          <h1 style={{ width: '358px', height: '115px' }}>
             {"A little room"}<br />
             {"for good ideas!"}</h1>
           <p className="description">
