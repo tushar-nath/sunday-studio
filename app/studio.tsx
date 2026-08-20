@@ -49,7 +49,7 @@ export function Studio() {
   return (
     <main className="studio">
       <header className="studio-nav">
-        <a className="wordmark" href="#home">
+        <a className="wordmark" href="#home" aria-label="Sunday studio home">
           <span className="tiny-sun">✳</span> sunday
         </a>
         <nav aria-label="Main navigation">
