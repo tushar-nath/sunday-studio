@@ -168,6 +168,8 @@ h1 {
   border: 0;
   background: none;
   padding: 0;
+  color: inherit;
+  font: inherit;
 }
 .note:focus-visible,
 .primary-link:focus-visible,
