@@ -170,6 +170,10 @@ h1 {
   padding: 0;
   color: inherit;
   font: inherit;
+  transition: color 180ms ease;
+}
+.note:hover {
+  color: #3263dd;
 }
 .note:focus-visible,
 .primary-link:focus-visible,
