@@ -1,5 +1,7 @@
 {
   "name": "sunday-studio",
+  "version": "0.1.0",
+  "description": "A small editorial workspace for collecting thoughts and ideas",
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
