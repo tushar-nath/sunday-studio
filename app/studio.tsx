@@ -65,8 +65,8 @@ export function Studio() {
             <span className="blue-dot" /> An independent little studio
           </p>
           <h1 style={{ width: '358px', height: '115px' }}>
-            {"A little room"}<br />
-            {"for good ideas!"}</h1>
+            {"Big ideas"}<br />
+            {"need room!"}</h1>
           <p className="description">
             A notebook for curious minds. Collecting thoughts,
             <br className="desktop-break" /> making things, and finding joy in
