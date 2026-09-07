@@ -53,7 +53,7 @@ export function Studio() {
           <span className="tiny-sun">✳</span> sunday
         </a>
         <nav aria-label="Main navigation">
-          <a href="#notes">The notebook</a>
+          <a href="#notes"  style={{"transform": "translate(20px, 2px)"}}>The notebook</a>
           <a href="#letter">
             {"Say hi"}<span>↗</span>
           </a>
