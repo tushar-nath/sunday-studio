@@ -64,9 +64,9 @@ export function Studio() {
           <p className="eyebrow">
             <span className="blue-dot" /> An independent little studio
           </p>
-          <h1 style={{ width: '358px', height: '115px' }}>
+          <h1  style={{width: '358px', height: '115px', "fontSize": "58px"}}>
             {"Big ideas"}<br />
-            {"need room!"}</h1>
+            {"need space!"}</h1>
           <p className="description">
             A notebook for curious minds. Collecting thoughts,
             <br className="desktop-break" /> making things, and finding joy in
