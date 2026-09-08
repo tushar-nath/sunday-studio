@@ -55,7 +55,7 @@ export function Studio() {
         <nav aria-label="Main navigation">
           <a href="#notes"  style={{"transform": "translate(20px, 2px)"}}>The notebook</a>
           <a href="#letter">
-            {"Say hi"}<span>↗</span>
+            {"Say hello"}<span>↗</span>
           </a>
         </nav>
       </header>
